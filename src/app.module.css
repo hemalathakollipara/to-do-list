@@ -1,0 +1,94 @@
+.container {
+  min-height: 100vh;
+  background-color: var(--background-color);
+  padding: 1rem;
+}
+
+.maxWidth {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.header {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.inputContainer {
+  border-radius: var(--border-radius);
+  background-color: var(--foreground-color);
+  display: flex;
+  overflow: hidden;
+}
+.inputContainer > input {
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: none;
+  color: var(--black);
+  flex: 1;
+}
+.inputContainer > button {
+  background-color: var(--primary-color);
+  border-radius: var(--border-radius);
+  color: var(--foreground-color);
+  border: none;
+  padding: 1rem;
+}
+
+.todosSection {
+  margin-top: 2rem;
+}
+.todosTitle {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.todosContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.nothingFound {
+  background-color: var(--foreground-color);
+  border-radius: var(--border-radius);
+  height: 200px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.todo {
+  width: 100%;
+  background-color: var(--foreground-color);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.todo > span {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.todo > span > input {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  accent-color: var(--primary-color);
+}
+.todo > span > p {
+  font-weight: 500;
+}
+.todo > button {
+  background-color: transparent;
+  color: rgb(241, 36, 36);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.completedTodo > span > p {
+  text-decoration: line-through;
+}

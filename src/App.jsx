@@ -28,7 +28,7 @@ export default function App() {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <h3>ChekerX</h3>
+        <h3>CheckerX</h3>
       </div>
       <div className={styles.maxWidth}>
         <form className={styles.inputContainer} onSubmit={handleAddTodo}>
